@@ -14,6 +14,9 @@ namespace modul2_1302223028
 
     public partial class Form1 : Form
     {
+        int nilai1;
+        int nilai2;
+
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +24,8 @@ namespace modul2_1302223028
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            nilai1 = Int32.Parse(label1.Text);
+            label1.Text = "";
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -60,9 +64,9 @@ namespace modul2_1302223028
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int Hasil = int.Parse(label1.Text);
-            label1.Text = Hasil.ToString();
-
+            nilai2 = Int32.Parse(label1.Text);
+            int hasil = nilai1 + nilai2;
+            label1.Text = hasil.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
